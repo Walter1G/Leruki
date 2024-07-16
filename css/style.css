@@ -206,6 +206,9 @@ img {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
+    .container{
+        padding: 1rem;
+    }
 
     .showcase{
         height: auto;
