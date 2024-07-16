@@ -180,6 +180,7 @@ img {
     text-align: center;
     margin: 18px 10px 40px;
     transition: all .3s ease-in;
+    min-width: 150px;
 }
 
 .languages .card h4{
@@ -189,4 +190,59 @@ img {
 
 .languages .card:hover{
     transform: translateY(-15px);
+}
+
+/* Footer */
+
+.footer .socials a{
+    margin: 0 10px;
+}
+
+/* Responsiveness */
+
+/* tablets and under */
+@media (max-width:768px){
+    .grid, .showcase .grid, .cli .grid, .cloud .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .showcase{
+        height: auto;
+    }
+
+    .showcase-text{
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .showcase-form{
+        justify-self: center;
+        margin: auto;
+    }
+    .cli .grid > *:first-child{
+        grid-column: 1 ;
+        grid-row: 1;
+    }
+    .languages .card{
+        min-width: none;
+    }
+
+}
+
+
+/* Mobiles */
+@media (max-width:500px){
+    .navbar{
+        height: 110px;
+    }
+
+    .navbar .flex{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        padding: 10px;
+        background-color: rgba(0,0,0,.1);
+    }
 }

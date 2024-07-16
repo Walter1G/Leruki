@@ -50,6 +50,11 @@
     color: #fff;
 }
 
+.bg-dark a, .btn-dark a{
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
 .bg-light, .btn-light{
     background-color: var(--light-color);
     color: #333;
