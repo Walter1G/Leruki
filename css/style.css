@@ -236,6 +236,7 @@ img {
 
 /* Mobiles */
 @media (max-width:500px){
+  
     .navbar{
         height: 110px;
     }
@@ -243,9 +244,35 @@ img {
     .navbar .flex{
         flex-direction: column;
     }
+    
 
     .navbar ul{
         padding: 10px;
         background-color: rgba(0,0,0,.1);
+    }
+    .showcase-text{
+   
+      padding: 0px 20px;
+    }
+
+    .showcase-form.card form input[type='submit']{
+      width: 100%;
+    }
+
+    .stats .grid-3{
+      grid-template-columns: 1fr;      
+    }
+
+    .stats .container h3:first-child{
+      margin-bottom: 10px;
+      
+    }
+
+    .footer .grid.grid-3{
+      grid-template-columns: 1fr;
+    }
+    .footer .grid.grid-3 .socials{
+      text-wrap: wrap;
+      text-align: center;
     }
 }
